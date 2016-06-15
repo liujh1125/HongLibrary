@@ -1,0 +1,44 @@
+//
+//  UIColor+Util.m
+//  iosapp
+//
+//  Created by chenhaoxiang on 14-10-18.
+//  Copyright (c) 2014年 oschina. All rights reserved.
+//
+
+#import "UIColor+Ext.h"
+
+
+UIColor * rgb(int r, int g, int b){
+    return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1];
+}
+UIColor * rgbA(int r, int g, int b, float a){
+    return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a];
+}
+UIColor * rgbweb(int rgbval){
+    return rgb((rgbval>>16)&0xFF,(rgbval>>8)&0xFF,(rgbval>>0)&0xFF);
+}
+
+
+@implementation UIColor (Ext)
+
+#pragma mark - Hex
+
++ (UIColor *)colorWithHex:(int)hexValue alpha:(CGFloat)alpha
+{
+    return [UIColor colorWithRed:((float)((hexValue & 0xFF0000) >> 16))/255.0
+                           green:((float)((hexValue & 0xFF00) >> 8))/255.0
+                            blue:((float)(hexValue & 0xFF))/255.0
+                           alpha:alpha];
+}
+
++ (UIColor *)colorWithHex:(int)hexValue
+{
+    return [UIColor colorWithHex:hexValue alpha:1.0];
+}
+
+
+
+
+
+@end

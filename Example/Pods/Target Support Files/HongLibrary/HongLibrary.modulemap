@@ -1,0 +1,6 @@
+framework module HongLibrary {
+  umbrella header "HongLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

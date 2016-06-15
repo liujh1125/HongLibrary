@@ -1,0 +1,16 @@
+PODS:
+  - HongLibrary (0.1.0)
+
+DEPENDENCIES:
+  - HongLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  HongLibrary:
+    :path: ../
+
+SPEC CHECKSUMS:
+  HongLibrary: 22bae487e455f9cb461027dbb44bee50fdc9493a
+
+PODFILE CHECKSUM: cc8de70db8465856db1a5411b75d62b519b3b277
+
+COCOAPODS: 1.0.1
