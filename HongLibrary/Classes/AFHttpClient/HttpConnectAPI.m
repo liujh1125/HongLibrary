@@ -9,7 +9,7 @@
 #import "HttpConnectAPI.h"
 #import "HongLibrary.h"
 #import "NSDate+Ext.h"
-#import "NSString+Extrens.h"
+#import "StringUtiles.h"
 #import "HttpClient.h"
 
 /**

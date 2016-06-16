@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HongLib_OC/Classes/**/*.{h,m,a,c}'
+  s.source_files = 'HongLibrary/Classes/**/*.{h,m,a,c}'
 
   # s.resource_bundles = {
   #   'HongLibrary' => ['HongLibrary/Assets/*.png']

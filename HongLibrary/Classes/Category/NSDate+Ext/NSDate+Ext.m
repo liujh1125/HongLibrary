@@ -7,7 +7,7 @@
 //
 
 #import "NSDate+Ext.h"
-#import "NSString+Extrens.h"
+#import "StringUtiles.h"
 
 @implementation NSDate (Ext)
 
@@ -180,7 +180,9 @@
 }
 
 +(NSString*)timestampFormat:(NSString*)timestampStr formatString:(NSString*)formatStr{
-    timestampStr = [NSString blankString:timestampStr];
+    if ([NSString isEmpty:timestampStr]) {
+        timestampStr = @"";
+    }
     NSTimeInterval applyTimestamp = [NSDate javaTimestampFormatToIOSTimestamp:timestampStr];
     NSString *dateStr = [NSDate dateWithTimeInterval:applyTimestamp format:formatStr];
     return dateStr;
@@ -188,8 +190,8 @@
 
 
 +(NSDate*)timeStampTransformToDate:(NSString*)timestampStr{
-    timestampStr = [NSString blankString:timestampStr];
-    if ([NSString isBlankString:timestampStr]) {
+    
+    if ([NSString isEmpty:timestampStr]) {
         return [NSDate dateWithTimeIntervalSince1970:0];
     }
     if ([timestampStr length] < 5) {
