@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 RanSong. All rights reserved.
 //
 
-#import "UIDevice+Ext.h"
+#import "DeviceUtiles.h"
 #import <sys/sysctl.h>
 #include <sys/param.h>
 #include <sys/mount.h>
@@ -23,7 +23,7 @@
 
 
 
-@implementation UIDevice (Ext)
+@implementation UIDevice (Utiles)
 
 - (NSString *)deviceModel
 {

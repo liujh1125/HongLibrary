@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 oschina. All rights reserved.
 //
 
-#import "UIView+Ext.h"
+#import "ViewUtiles.h"
 #import <GPUImage/GPUImage.h>
 
 @implementation UIView (Ext)

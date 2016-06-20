@@ -6,12 +6,12 @@
 //  Copyright (c) 2014年 Maxicn. All rights reserved.
 //
 
-#import "UIViewController+MessageExt.h"
+#import "ViewControllerMessageUtiles.h"
 #import "MBProgressHUD.h"
-#import "UIAlertView+BlockExt.h"
+//#import "UIAlertView+BlockExt.h"
 #import "DefineMacro.h"
 
-@implementation UIViewController (MessageExt)
+@implementation UIViewController (MessageUtiles)
 
 - (void)showError:(NSError *)error
 {

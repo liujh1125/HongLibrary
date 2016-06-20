@@ -6,9 +6,11 @@
 //
 //
 
-#import "UIImage+Ext.h"
+#import "ImageUtiles.h"
 
-@implementation UIImage (Ext)
+@implementation UIImage (Utiles)
+
+
 + (UIImage *)imageWithName:(NSString *)aName withBundleName:(NSString *)aBundleName{
     return [UIImage imageNamed:[NSString stringWithFormat:@"%@.bundle/%@",aBundleName,aName]];
 }

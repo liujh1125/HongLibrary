@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIDevice (Ext)
+@interface UIDevice (Utiles)
 
 /**
  *  获取设备型号

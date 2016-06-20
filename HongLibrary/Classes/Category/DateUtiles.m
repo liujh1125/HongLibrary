@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 SF. All rights reserved.
 //
 
-#import "NSDate+Ext.h"
+#import "DateUtiles.h"
 #import "StringUtiles.h"
 
-@implementation NSDate (Ext)
+@implementation NSDate (Utiles)
 
 + (NSDate *)dateWithString:(NSString *)str format:(NSString *)formating
 {

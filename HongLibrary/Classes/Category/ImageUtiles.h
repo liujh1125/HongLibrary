@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Ext)
+@interface UIImage (Utiles)
 + (UIImage *)imageWithName:(NSString *)aName withBundleName:(NSString *)aBundleName;
 
 + (UIImage *)imageWithColor:(UIColor *)maskColor ImgSize:(CGSize)size;

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (MessageExt)
+@interface UIViewController (MessageUtiles)
 
 /**
  @param str 加载框显示的文字

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDate (Ext)
+@interface NSDate (Utiles)
 
 /**
  *	@brief	从NSString转成NSDate
